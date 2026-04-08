@@ -1,9 +1,5 @@
 # Les Événements
 
-les evenements.md2024-06-12
-
-## Par Robert DIASSÉ
-
 
 ## Les Événements en JavaScript
 
@@ -36,12 +32,7 @@ Vous pouvez ajouter un gestionnaire d'événements directement dans votre HTML :
 
 Vous pouvez assigner une fonction directement à une propriété d'événement d'un élément DOM :
 
-```html <button id="myButton">Click me</button> <script>
-```
-
-les evenements.md2024-06-12
-
-```javascript const button = document.getElementById('myButton'); button.onclick = function() { alert('Button clicked!'); }; </script> 3. Méthode addEventListener
+```javascript <button id="myButton">Click me</button> <script> const button = document.getElementById('myButton'); button.onclick = function() { alert('Button clicked!'); </script> 3. Méthode addEventListener
 ```
 
 C'est la méthode recommandée car elle permet d'ajouter plusieurs écouteurs au même événement et d'enlever des écouteurs si nécessaire :
