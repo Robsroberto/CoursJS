@@ -1,9 +1,5 @@
 # Manipulation du DOM
 
-le dom.md2024-06-12
-
-## Par Robert DIASSÉ
-
 
 ## Le DOM en JavaScript
 
@@ -29,7 +25,7 @@ Le DOM représente un document HTML sous forme d'un arbre d'objets. Chaque élé
 
 ### Types de Nœuds
 
-1. Document : Représente le document entier. 2. Element : Représente un élément HTML. 3. Attribute : Représente un attribut d'un élément HTML. le dom.md2024-06-12 4. Text : Représente le contenu textuel d'un élément ou d'un attribut. 5. Comment : Représente un commentaire dans le document. 6. DocumentFragment : Représente une partie détachée du document.
+1. Document : Représente le document entier. 2. Element : Représente un élément HTML. 3. Attribute : Représente un attribut d'un élément HTML. 4. Text : Représente le contenu textuel d'un élément ou d'un attribut. 5. Comment : Représente un commentaire dans le document. 6. DocumentFragment : Représente une partie détachée du document.
 
 ### Exemple de Structure du DOM
 
@@ -51,12 +47,7 @@ L'arbre DOM correspondant serait :
 
 JavaScript fournit plusieurs méthodes pour accéder aux éléments du DOM :
 
-```javascript 1. getElementById : Sélectionne un élément par son identifiant. let paragraphe = document.getElementById("paragraphe"); 2. getElementsByClassName : Sélectionne des éléments par leur classe. let elements = document.getElementsByClassName("maClasse"); 3. getElementsByTagName : Sélectionne des éléments par leur nom de balise.
-```
-
-le dom.md2024-06-12
-
-```javascript let paragraphes = document.getElementsByTagName("p"); 4. querySelector : Sélectionne le premier élément correspondant à un sélecteur CSS. let premierParagraphe = document.querySelector("p"); 5. querySelectorAll : Sélectionne tous les éléments correspondant à un sélecteur CSS. let tousLesParagraphes = document.querySelectorAll("p");
+```javascript 1. getElementById : Sélectionne un élément par son identifiant. let paragraphe = document.getElementById("paragraphe"); 2. getElementsByClassName : Sélectionne des éléments par leur classe. let elements = document.getElementsByClassName("maClasse"); 3. getElementsByTagName : Sélectionne des éléments par leur nom de balise. let paragraphes = document.getElementsByTagName("p"); 4. querySelector : Sélectionne le premier élément correspondant à un sélecteur CSS. let premierParagraphe = document.querySelector("p"); 5. querySelectorAll : Sélectionne tous les éléments correspondant à un sélecteur CSS. let tousLesParagraphes = document.querySelectorAll("p");
 ```
 
 
@@ -115,11 +106,7 @@ Supprimer des Éléments
 
 Vous pouvez ajouter, supprimer et basculer des classes CSS sur les éléments.
 
-```javascript let paragraphe = document.getElementById("paragraphe"); // Ajouter une classe paragraphe.classList.add("nouvelleClasse"); // Supprimer une classe paragraphe.classList.remove("nouvelleClasse");
-```
-
-
-```code // Basculer une classe paragraphe.classList.toggle("active");
+```javascript let paragraphe = document.getElementById("paragraphe"); // Ajouter une classe paragraphe.classList.add("nouvelleClasse"); // Supprimer une classe paragraphe.classList.remove("nouvelleClasse"); // Basculer une classe paragraphe.classList.toggle("active");
 ```
 
 
