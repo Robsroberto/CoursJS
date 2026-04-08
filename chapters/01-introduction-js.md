@@ -1,11 +1,7 @@
 # 01 Introduction Js
 
-Introduction au JavaScript.md2024-05-22
 
 ## JS : Introduction
-
-
-## Par Robert DIASSÉ
 
 
 ### Introduction à JavaScript
@@ -22,7 +18,7 @@ Introduction au JavaScript.md2024-05-22
 
 des fichiers JavaScript externes. Du côté serveur, vous pouvez exécuter du code JavaScript à l'aide de Node.js ou d'autres environnements d'exécution.
 
-**Outils essentiels pour utiliser JavaScript :** Éditeurs de code : Des outils comme Visual Studio Code, Sublime Text, ou Atom sont populaires pour écrire du code JavaScript avec des fonctionnalités d'édition avancées. Navigateurs web : Les navigateurs modernes comme Google Chrome, Mozilla Firefox, et Safari disposent de puissants outils de développement intégrés qui permettent de déboguer et de profiler du Introduction au JavaScript.md2024-05-22 code JavaScript. Frameworks et bibliothèques : Des frameworks comme React.js, AngularJS, ou Vue.js facilitent le développement d'applications web complexes en fournissant des structures et des fonctionnalités prêtes à l'emploi.
+**Outils essentiels pour utiliser JavaScript :** Éditeurs de code : Des outils comme Visual Studio Code, Sublime Text, ou Atom sont populaires pour écrire du code JavaScript avec des fonctionnalités d'édition avancées. Navigateurs web : Les navigateurs modernes comme Google Chrome, Mozilla Firefox, et Safari disposent de puissants outils de développement intégrés qui permettent de déboguer et de profiler du code JavaScript. Frameworks et bibliothèques : Des frameworks comme React.js, AngularJS, ou Vue.js facilitent le développement d'applications web complexes en fournissant des structures et des fonctionnalités prêtes à l'emploi.
 
 **Portée en tant que langage de programmation :** JavaScript est l'un des langages de programmation les plus largement utilisés dans le monde, en grande partie grâce à sa flexibilité et à sa portabilité. Il est devenu un langage incontournable pour le développement web moderne, et son utilisation continue de croître dans de nombreux autres domaines, notamment le développement mobile, l'IoT (Internet des Objets), et les applications serveur.
 
@@ -37,12 +33,7 @@ des fichiers JavaScript externes. Du côté serveur, vous pouvez exécuter du co
 
 **Côté Serveur (Node.js) :** JavaScript peut également être exécuté côté serveur grâce à des environnements comme Node.js. Voici comment créer et exécuter un script JavaScript côté serveur avec Node.js : 1. Installer Node.js : Téléchargez et installez Node.js depuis le site officiel (https://nodejs.org/).
 
-```javascript 2. Créer un fichier JavaScript : Créez un fichier hello.js avec le code suivant : // hello.js console.log("Bonjour, monde !");
-```
-
-Introduction au JavaScript.md2024-05-22
-
-```bash 3. Exécuter le script : Ouvrez une ligne de commande et exécutez le script avec la commande node : node hello.js
+```javascript 2. Créer un fichier JavaScript : Créez un fichier hello.js avec le code suivant : // hello.js console.log("Bonjour, monde !"); 3. Exécuter le script : Ouvrez une ligne de commande et exécutez le script avec la commande node : node hello.js
 ```
 
 Vous verrez la sortie "Bonjour, monde !" dans la console.
