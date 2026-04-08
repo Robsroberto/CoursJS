@@ -1,9 +1,5 @@
 # Les Fonctions
 
-les fonctions.md2024-06-12
-
-## Par Robert DIASSÉ
-
 
 ## Les Fonctions en JavaScript
 
@@ -20,7 +16,7 @@ Les fonctions sont des blocs de code réutilisables qui permettent d'organiser e
 
 et d'un bloc de code entre accolades.
 
-```javascript function saluer(nom) { return "Bonjour " + nom + "!"; } console.log(saluer("Alice")); // Affiche "Bonjour Alice!"
+```javascript function saluer(nom) { return "Bonjour " + nom + "!"; console.log(saluer("Alice")); // Affiche "Bonjour Alice!"
 ```
 
 
@@ -28,19 +24,14 @@ et d'un bloc de code entre accolades.
 
 Une fonction anonyme est une fonction sans nom, souvent utilisée comme valeur de retour ou argument pour une autre fonction.
 
-```javascript let afficherMessage = function(message) { console.log(message); }; afficherMessage("Salut!"); // Affiche "Salut!"
+```javascript let afficherMessage = function(message) { console.log(message); afficherMessage("Salut!"); // Affiche "Salut!"
 ```
 
 
 ### Fonction Fléchée (Arrow Function)
 
 
-```code Les fonctions fléchées offrent une syntaxe plus concise et ne lient pas leur propre this.
-```
-
-les fonctions.md2024-06-12
-
-```javascript let addition = (a, b) => a + b; console.log(addition(2, 3)); // Affiche 5
+```javascript Les fonctions fléchées offrent une syntaxe plus concise et ne lient pas leur propre this. let addition = (a, b) => a + b; console.log(addition(2, 3)); // Affiche 5
 ```
 
 
@@ -48,7 +39,7 @@ les fonctions.md2024-06-12
 
 Les fonctions peuvent être définies à l'intérieur d'autres fonctions.
 
-```javascript function exterieur(a) { function interieur(b) { return a + b; } return interieur; } let additionDeCinq = exterieur(5); console.log(additionDeCinq(3)); // Affiche 8
+```javascript function exterieur(a) { function interieur(b) { return a + b; return interieur; let additionDeCinq = exterieur(5); console.log(additionDeCinq(3)); // Affiche 8
 ```
 
 
@@ -69,7 +60,7 @@ Convertit une chaîne en nombre à virgule flottante.
 ```javascript let flottant = parseFloat("123.45"); console.log(flottant); // Affiche 123.45 isNaN()
 ```
 
-Vérifie si une valeur est NaN (Not-a-Number). les fonctions.md2024-06-12
+Vérifie si une valeur est NaN (Not-a-Number).
 
 ```javascript let resultat = isNaN("123"); console.log(resultat); // Affiche false setTimeout()
 ```
@@ -81,7 +72,7 @@ Exécute une fonction après un certain délai.
 
 Exécute une fonction à intervalles réguliers.
 
-```javascript let compteur = 0; let intervalId = setInterval(function() { compteur++; console.log("Compteur : " + compteur); if (compteur === 5) { clearInterval(intervalId); } }, 1000);
+```javascript let compteur = 0; let intervalId = setInterval(function() { compteur++; console.log("Compteur : " + compteur); if (compteur === 5) { clearInterval(intervalId); }, 1000);
 ```
 
 
@@ -92,13 +83,13 @@ Exécute une fonction à intervalles réguliers.
 
 Les fonctions de rappel sont des fonctions passées en argument à une autre fonction, qui les appelle après avoir terminé son travail.
 
-```javascript function demanderNom(callback) { let nom = prompt("Quel est votre nom?"); callback(nom); } demanderNom(function(nom) { console.log("Bonjour " + nom + "!"); });
+```javascript function demanderNom(callback) { let nom = prompt("Quel est votre nom?"); callback(nom); demanderNom(function(nom) { console.log("Bonjour " + nom + "!"); });
 ```
 
 
 ### Fonctions Immédiatement Invocables (IIFE)
 
-Les fonctions immédiatement invoquées sont définies et exécutées immédiatement. les fonctions.md2024-06-12
+Les fonctions immédiatement invoquées sont définies et exécutées immédiatement.
 
 ```javascript (function() { console.log("Cette fonction est immédiatement invoquée."); })();
 ```
@@ -112,7 +103,7 @@ Les fonctions immédiatement invoquées sont définies et exécutées immédiate
 
 lisible.
 
-```javascript async function fetchData() { let response = await fetch('https://api.example.com/data'); let data = await response.json(); console.log(data); } fetchData();
+```javascript async function fetchData() { let response = await fetch('https://api.example.com/data'); let data = await response.json(); console.log(data); fetchData();
 ```
 
 
@@ -120,7 +111,7 @@ lisible.
 
 Les variables en JavaScript peuvent avoir une portée globale ou locale. Globale : Déclarée en dehors de toute fonction. Locale : Déclarée à l'intérieur d'une fonction.
 
-```javascript let globalVar = "Je suis globale"; function afficherGlobale() { console.log(globalVar); } afficherGlobale(); // Affiche "Je suis globale"
+```javascript let globalVar = "Je suis globale"; function afficherGlobale() { console.log(globalVar); afficherGlobale(); // Affiche "Je suis globale"
 ```
 
 
@@ -128,7 +119,7 @@ Les variables en JavaScript peuvent avoir une portée globale ou locale. Globale
 
 Une fonction récursive est une fonction qui s'appelle elle-même.
 
-```javascript function factorielle(n) { if (n <= 1) { return 1; } else { return n * factorielle(n - 1); } } console.log(factorielle(5)); // Affiche 120
+```javascript function factorielle(n) { if (n <= 1) { return 1; } else { return n * factorielle(n - 1); console.log(factorielle(5)); // Affiche 120
 ```
 
 
@@ -177,12 +168,12 @@ particulièrement utile dans les fonctions pour accepter un nombre variable d'ar
 
 Utilisation avec les Objets
 
-```javascript let personne = { nom: "Alice", age: 25 }; let personneAvecVille = { ...personne, ville: "Paris" }; console.log(personneAvecVille); // Affiche { nom: "Alice", age: 25, ville: "Paris" }
+```javascript let personne = { nom: "Alice", age: 25 }; let personneAvecVille = { ...personne, ville: "Paris" }; console.log(personneAvecVille); // Affiche { nom: "Alice", age: 25, ville: "Paris"
 ```
 
-Utilisation dans les Fonctions Le spread operator peut être utilisé pour passer un nombre variable d'arguments à une fonction. les fonctions.md2024-06-12
+Utilisation dans les Fonctions Le spread operator peut être utilisé pour passer un nombre variable d'arguments à une fonction.
 
-```javascript function addition(...nombres) { return nombres.reduce((acc, curr) => acc + curr, 0); } console.log(addition(1, 2, 3, 4)); // Affiche 10
+```javascript function addition(...nombres) { return nombres.reduce((acc, curr) => acc + curr, 0); console.log(addition(1, 2, 3, 4)); // Affiche 10
 ```
 
 
