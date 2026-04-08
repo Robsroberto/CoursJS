@@ -1,0 +1,18 @@
+{
+  "slug": "javascript",
+  "title": "JavaScript — Les Bases",
+  "description": "Apprends JavaScript de zéro : variables, fonctions, DOM et événements. Du débutant à l'intermédiaire.",
+  "level": "débutant",
+  "price": 5000,
+  "free_chapters": 5,
+  "tags": ["JavaScript", "DOM", "Web"],
+  "version": "1.0.0",
+  "chapters": [
+    {"file": "01-introduction.md",   "title": "Introduction au JavaScript"},
+    {"file": "02-variables.md",       "title": "Variables, Types & Opérateurs"},
+    {"file": "03-tableaux-objets.md", "title": "Tableaux & Objets"},
+    {"file": "04-fonctions.md",       "title": "Les Fonctions"},
+    {"file": "05-dom.md",             "title": "Manipulation du DOM"},
+    {"file": "06-evenements.md",      "title": "Les Événements"}
+  ]
+}
